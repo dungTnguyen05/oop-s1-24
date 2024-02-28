@@ -1,6 +1,6 @@
 bool is_ascending(int array[], int n) {
     if (n < 1) {
-        return 0;
+        return false;
     }
 
     else {

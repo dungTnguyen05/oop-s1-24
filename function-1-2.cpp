@@ -1,11 +1,20 @@
-double array_mean(int array[], int n) {
-    double sum = 0;
+#include <iostream>
+using namespace std;
 
-    for (int i = 0; i < n; i++) {
-        sum += array[i];
+double array_mean(int array[], int n) {
+    if (n < 1) {
+        return 0.0;
     }
 
-    double mean = sum/n;
+    else {
+        double sum = 0;
+
+        for (int i = 0; i < n; i++) {
+            sum += array[i];
+        }
+
+        double mean = sum/n;
     
-    return mean;
+        return mean;
+    }
 }

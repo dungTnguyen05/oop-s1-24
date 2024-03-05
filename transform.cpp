@@ -28,4 +28,7 @@ int main() {
 
     int tnt = 279;
     dec_to_bin(tnt);
+
+    int alo = 197711;
+    dec_to_bin(alo);
 }

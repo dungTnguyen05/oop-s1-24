@@ -56,9 +56,9 @@ void count_digits(int array[4][4]) {
     cout << "3:" << count[3] << ";";
     cout << "4:" << count[4] << ";";
     cout << "5:" << count[5] << ";";
-    cout << "6:" << count[0] << ";";
-    cout << "7:" << count[0] << ";";
-    cout << "8:" << count[0] << ";";
-    cout << "9:" << count[0] << ";";
+    cout << "6:" << count[6] << ";";
+    cout << "7:" << count[7] << ";";
+    cout << "8:" << count[8] << ";";
+    cout << "9:" << count[9] << ";";
     cout << endl;
 }

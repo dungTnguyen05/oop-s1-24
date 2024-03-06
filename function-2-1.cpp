@@ -6,7 +6,7 @@ void print_binary_str(std::string decimal_number) {
     int power2 = 1;
     int len = 0;
 
-    while (base10 > power2) {
+    while (base10 >= power2) {
         power2 *= 2;
         len++;
     }

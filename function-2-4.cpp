@@ -1,3 +1,6 @@
+extern int array_min(int integers[], int length);
+extern int array_max(int integers[], int length);
+
 int sum_min_max(int integers[], int length) {
     if (length < 1) {
         return -1;

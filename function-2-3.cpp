@@ -1,3 +1,6 @@
+extern bool is_palindrome(int integers[], int length);
+extern int sum_array_elements(int integers[], int length);
+
 int sum_if_palindrome(int integers[], int length) {
     if (is_palindrome(integers, length) == true) {
         return sum_array_elements(integers, length);

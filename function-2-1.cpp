@@ -3,6 +3,13 @@ using namespace std;
 
 void print_binary_str(std::string decimal_number) {
     int base10 = stoi(decimal_number);
+
+    if (base10 == 0) {
+        cout << "0";
+        cout << endl;
+        return;
+    }
+    
     int power2 = 1;
     int len = 0;
 

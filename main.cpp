@@ -4,12 +4,13 @@ using namespace std;
 
 int main() {
     double a[6] = {1, 9, 7, 7, 1, 1};
+    cout << endl;
 
     changeValue(a + 5);
     cout << a[5] << endl;
 
     printArray(a, 6);
-    //cout << endl;
+    cout << endl;
 
     cout << arrayMax(a, 6);
     cout << endl;
@@ -23,6 +24,7 @@ int main() {
     cout << endl;
 
     double b[10] = {3, 1, 4, 1, 5, 2, 7, 1, 8, 2};
+    cout << endl;
 
     changeValue(&b[6]);
     cout << b[6] << endl;

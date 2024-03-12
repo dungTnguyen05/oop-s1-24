@@ -9,7 +9,7 @@ int main() {
     cout << a[5] << endl;
 
     printArray(a, 6);
-    cout << endl;
+    //cout << endl;
 
     cout << arrayMax(a, 6);
     cout << endl;

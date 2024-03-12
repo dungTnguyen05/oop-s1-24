@@ -9,7 +9,6 @@ int main() {
     cout << a[5] << endl;
 
     printArray(a, 6);
-    cout << endl;
 
     cout << arrayMax(a, 6);
     cout << endl;
@@ -28,7 +27,6 @@ int main() {
     cout << b[6] << endl;
 
     printArray(b, 10);
-    cout << endl;
 
     cout << arrayMax(b, 10);
     cout << endl;

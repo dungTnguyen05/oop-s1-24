@@ -3,12 +3,15 @@ using namespace std;
 
 void changeValue(double *x) {
     *x = 42;
+    cout << endl;
 }
 
 void printArray(double *x, int len) {
     for (int i = 0; i < len; i++) {
         cout << *(x + i) << " ";
     }
+    
+    cout << endl;
 }
 
 double arrayMax(double *x, int len) {

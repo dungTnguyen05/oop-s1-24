@@ -19,6 +19,7 @@ int main() {
         cout << x[i] << " ";
     }
 
+    delete[] x;
     cout << endl;
 
     double b[10] = {3, 1, 4, 1, 5, 2, 7, 1, 8, 2};
@@ -36,6 +37,7 @@ int main() {
     for (int i = 0; i < 10; i++) {
         cout << y[i] << " ";
     }
-
+    
+    delete[] y;
     cout << endl;
 }

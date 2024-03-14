@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-double *duplicateArray(double *array, int size);
+extern double *duplicateArray(double *array, int size);
 
 int main() {
     double a[4] = {19.7, 7.11, 15.9, 20.05};

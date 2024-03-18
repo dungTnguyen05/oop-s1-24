@@ -2,14 +2,14 @@
 using namespace std;
 
 int *readNumbers() {
-    int *a = new int[10];
+    int *arr = new int[10];
 
     for (int i = 0; i < 10; i++) {
         cout << "Enter a number: ";
-        cin >> a[i];
+        cin >> arr[i];
     }
 
-    return a;
+    return arr;
 }
 
 void printNumbers(int *numbers, int length) {

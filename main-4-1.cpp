@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int *readNumbers();
-int secondSmallestSum(int *numbers, int length);
+extern int *readNumbers();
+extern int secondSmallestSum(int *numbers, int length);
 
 int main() {
     int *a = readNumbers();

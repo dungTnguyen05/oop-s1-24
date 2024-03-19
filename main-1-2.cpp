@@ -9,7 +9,7 @@ int main() {
     PersonList x = createPersonList(a);
     cout << x.numPeople << endl;
 
-    for (int i = 0; i < a; i++) {
+    for (int i = 0; i < x.numPeople; i++) {
         cout << x.people[i].name << ", " << x.people[i].age << endl;
     }
 
@@ -17,7 +17,7 @@ int main() {
     PersonList y = createPersonList(b);
     cout << y.numPeople << endl;
 
-    for (int i = 0; i < b; i++) {
+    for (int i = 0; i < y.numPeople; i++) {
         cout << y.people[i].name << ", " << y.people[i].age << endl;
     }
 }

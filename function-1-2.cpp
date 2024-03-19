@@ -5,9 +5,9 @@ using namespace std;
 PersonList createPersonList(int n) {
     PersonList arr;
     arr.numPeople = n;
-    arr.people = new Person[n];
+    arr.people = new Person[arr.numPeople];
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < arr.numPeople; i++) {
         arr.people[i].name = "Jane Doe";
         arr.people[i].age = 1;
     }

@@ -8,4 +8,5 @@ int main() {
     int *a = readNumbers();
     int len = 10;
     cout << secondSmallestSum(a, len) << endl;
+    delete[] a;
 }

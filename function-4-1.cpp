@@ -13,23 +13,35 @@ int *readNumbers() {
 }
 
 int secondSmallestSum(int *numbers, int length) {
-    int min_res = numbers[0];
+    int sum_len = length * (length + 1)/2;
+    int *sum_res = new int[sum_len];
     int index = 0;
+    int temp;
 
-    for (int i = 1; i < length; i++) {
-        if (numbers[i] < min_res) {
-            min_res = numbers[i];
-            index = i;
+    for (int i = 0; i < length; i++) {
+        sum_res[index] = numbers[i];
+        index++;
+
+        for (int j = i + 1; j < length; j++) {
+            sum_res[index] = sum_res[index - 1] + numbers[j];
+            index++;
         }
     }
 
-    int second_min_res = numbers[0];
+    for (int i = 0; i < sum_len; i++) {
+        temp = sum_res[i];
+        index = i;
 
-    for (int i = 1; i < length; i++) {
-        if (numbers[i] < second_min_res && i != index) {
-            second_min_res = numbers[i];
+        for (int j = i + 1; j < sum_len; j++) {
+            if (sum_res[j] < temp) {
+                temp = sum_res[j];
+                index = j;
+            }
         }
+
+        sum_res[index] = sum_res[i];
+        sum_res[i] = temp;
     }
 
-    return second_min_res;
+    return sum_res[1];
 }

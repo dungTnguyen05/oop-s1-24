@@ -20,4 +20,19 @@ int main() {
     for (int i = 0; i < y.numPeople; i++) {
         cout << y.people[i].name << ", " << y.people[i].age << endl;
     }
+
+    int b = 6;
+    PersonList z = createPersonList(b);
+    cout << z.numPeople << endl;
+
+    for (int i = 0; i < z.numPeople; i++) {
+        cout << z.people[i].name << ", " << z.people[i].age << endl;
+    }
+
+    PersonList t = deepCopyPersonList(z);
+    cout << t.numPeople << endl;
+
+    for (int i = 0; i < t.numPeople; i++) {
+        cout << t.people[i].name << ", " << t.people[i].age << endl;
+    }
 }

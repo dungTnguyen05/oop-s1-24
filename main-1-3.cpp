@@ -21,7 +21,7 @@ int main() {
         cout << y.people[i].name << ", " << y.people[i].age << endl;
     }
 
-    int b = 6;
+    int b = 8;
     PersonList z = createPersonList(b);
     cout << z.numPeople << endl;
 

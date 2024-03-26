@@ -3,12 +3,12 @@
 
 #include "Musician.h"
 
-Musician::Musician(): Musician("null", 0) {
-}
-
 Musician::Musician(string instrument, int experience) {
     instrument_name = instrument;
     exp_year = experience;
+}
+
+Musician::Musician(): Musician("null", 0) {
 }
 
 string Musician::get_instrument() {

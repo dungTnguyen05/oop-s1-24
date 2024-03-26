@@ -1,14 +1,11 @@
-#ifndef MUSICIAN_CPP
-#define MUSICIAN_CPP
-
 #include "Musician.h"
+
+Musician::Musician(): Musician::Musician("null", 0) {
+}
 
 Musician::Musician(string instrument, int experience) {
     instrument_name = instrument;
     exp_year = experience;
-}
-
-Musician::Musician(): Musician("null", 0) {
 }
 
 string Musician::get_instrument() {
@@ -18,5 +15,3 @@ string Musician::get_instrument() {
 int Musician::get_experience() {
     return exp_year;
 }
-
-#endif

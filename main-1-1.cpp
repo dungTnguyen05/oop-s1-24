@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Musician.h"
 #include "Musician.cpp"
-//using namespace std;
+using namespace std;
 
 int main() {
     Musician m1;

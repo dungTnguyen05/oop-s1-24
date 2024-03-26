@@ -1,6 +1,6 @@
 #include "Musician.h"
 
-Musician::Musician(): Musician::Musician("null", 0) {
+Musician::Musician(): Musician("null", 0) {
 }
 
 Musician::Musician(string instrument, int experience) {

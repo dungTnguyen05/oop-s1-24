@@ -1,4 +1,4 @@
-#ifndef APARTMENTBULDING_H
+#ifndef APARTMENTBUILDING_H
 #define APARTMENTBUILDING_H
 
 #include "Unit.h"
@@ -16,6 +16,6 @@ class ApartmentBuilding {
         Unit *get_Contents();
         bool add_Unit(Unit unit);
         ~ApartmentBuilding();
-    };
+};
 
 #endif

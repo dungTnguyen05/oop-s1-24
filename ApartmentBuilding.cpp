@@ -1,6 +1,4 @@
-#include <iostream>
 #include "ApartmentBuilding.h"
-using namespace std;
 
 ApartmentBuilding::ApartmentBuilding(): ApartmentBuilding(10) {
 }
@@ -35,5 +33,4 @@ bool ApartmentBuilding::add_Unit(Unit unit) {
 
 ApartmentBuilding::~ApartmentBuilding() {
     delete[] unit_list;
-    cout << "successfully deleted" << endl;
 }

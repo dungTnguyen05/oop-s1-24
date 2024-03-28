@@ -1,4 +1,6 @@
+#include <iostream>
 #include "ApartmentBuilding.h"
+using namespace std;
 
 ApartmentBuilding::ApartmentBuilding(): ApartmentBuilding(10) {
 }

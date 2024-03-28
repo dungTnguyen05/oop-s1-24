@@ -23,8 +23,8 @@ Unit *ApartmentBuilding::get_Contents() {
 
 bool ApartmentBuilding::add_Unit(Unit unit) {
     if (current < cap) {
-        unit_list[current] = unit;
-        current++;
+        unit_list[current++] = unit;
+        //current++;
         return true;
     }
 

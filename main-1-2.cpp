@@ -28,4 +28,6 @@ int main() {
     for (int i = 0; i < a.get_Capacity(); i++) {
         cout << arr[i].get_Value() << " " << arr[i].get_Num_Bedrooms() << " " << arr[i].get_Area() << endl;
     }
+
+    a.~ApartmentBuilding();
 }

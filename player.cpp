@@ -1,13 +1,10 @@
 #include "player.h"
 
-Player::Player(string name, int health, int damage) {
-    name = name;
-    health = health;
-    damage = damage;
+Player::Player(string name, int health, int damage) : name(name), health(health), damage(damage) {
 }
 
 void Player::attack(Player *opponent, int damage) {
-    opponent -> health -= damage;
+    opponent->takeDamage(damage);
 }
 
 void Player::takeDamage(int damage) {

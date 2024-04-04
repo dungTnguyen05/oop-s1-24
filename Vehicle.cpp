@@ -11,6 +11,6 @@ int Vehicle::getID() {
 
 int Vehicle::getParkingDuration() {
     time_t current_time = time(0);
-    int duration = int(current_time - timeOfEntry);
+    int duration = current_time - timeOfEntry;
     return duration;
 }

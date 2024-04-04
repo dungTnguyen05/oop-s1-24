@@ -1,5 +1,5 @@
 #include "ParkingLot.h"
-#include  "Vehicle.h"
+#include "Vehicle.h"
 
 ParkingLot::ParkingLot(int new_capacity) {
     capacity = new_capacity;
@@ -18,26 +18,30 @@ void ParkingLot::parkVehicle(Vehicle *new_vehicle) {
     }
 }
 
-void ParkingLot::unparkVehicle(int ID) {
+void ParkingLot::unparkVehicle(int ID_removed) {
     int count = 0;
-    for (int i = 0; i<current; i++){
-        if (vehicles[i]->getID() == ID){
-            delete vehicles[i];
-             current = current -1;
-            for (int j = i; j < current; j++)
-            {
-                    vehicles[j] = vehicles[j+1];
+
+    for (int i = 0; i < current; i++) {
+        if (ID_removed == vehicles[i] -> getID()) {
+            delete[] vehicles[i];
+
+            for (int j = i; j < current - 1; j++) {
+                vehicles[j] = vehicles[j + 1];  
             }
-            delete[] vehicles[current];
+
+            delete[] vehicles[current - 1];
+            current--;
             break;
-         } 
-         count ++;
-         }
-        if (count == current){
-            cout<<"Vehicle not in the lot"<<endl;
         }
-        cout<<endl;
-         
+
+        count++;
+    }
+
+    if (count == current) {
+        cout << "Vehicle not in the lot" << endl;
+    }
+
+    cout << endl;
 }
 
 int ParkingLot::getCount() {

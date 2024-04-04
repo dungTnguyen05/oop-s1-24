@@ -27,7 +27,8 @@ void ParkingLot::unparkVehicle(int ID_removed) {
             for (int j = i; j < current - 1; j++) {
                 vehicles[j] = vehicles[j + 1];  
             }
-            
+
+            delete[] vehicles[current - 1];
             current--;
             break;
         }

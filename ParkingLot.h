@@ -10,6 +10,7 @@ class ParkingLot {
         int capacity;
         int current;
         Vehicle **vehicles;
+        int max_duration;
     public:
         ParkingLot(int new_capacity);
         void parkVehicle(Vehicle *new_vehicle);

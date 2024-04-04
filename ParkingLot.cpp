@@ -47,3 +47,14 @@ int ParkingLot::getCount() {
     return current;
 }
 
+int ParkingLot::countOverstayingVehicles(int max_duration) {
+    int count = 0;
+
+    for (int i = 0; i < current; i++) {
+        if (vehicles[i] -> getParkingDuration() > max_duration) {
+            count++;
+        }
+    }
+
+    return count;
+}

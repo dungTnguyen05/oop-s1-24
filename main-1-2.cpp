@@ -9,7 +9,7 @@ using namespace std;
 int main() {
     ParkingLot a(6);
     string vehicle_type;
-    int new_ID;
+    int new_ID, ID_removed;
 
     for (int i = 0; i < 6; i++) {
         cout << "Type of vehicle: ";
@@ -27,12 +27,17 @@ int main() {
             a.parkVehicle(new Bus(new_ID));
         }
 
-        else {
+        else { 
             cout << "Enter the ID: ";
             cin >> new_ID;
             a.parkVehicle(new Motorbike(new_ID));
         }
 
-        cout << "current: " << a.getCount() << endl;
+        cout << "Current: " << a.getCount() << endl;
     }
+
+    cout << "Enter the ID removed: ";
+    cin >> ID_removed;
+    a.unparkVehicle(ID_removed);
+    cout << a.getCount() << endl;
 }

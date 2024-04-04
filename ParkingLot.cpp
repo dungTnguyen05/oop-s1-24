@@ -1,4 +1,5 @@
 #include "ParkingLot.h"
+#include  "Vehicle.h"
 
 ParkingLot::ParkingLot(int new_capacity) {
     capacity = new_capacity;

@@ -16,6 +16,7 @@ bool House::addAppliance(Appliance *appliance) {
     if (current < numAppliances) {
         appliances[current] = appliance;
         current++;
+        return true;
     }
 
     return false;

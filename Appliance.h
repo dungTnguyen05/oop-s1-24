@@ -11,6 +11,7 @@ class Appliance {
     public:
         Appliance();
         Appliance(int powerRating);
+        
         virtual double getPowerConsumption();
 
         int get_powerRating();

@@ -1,25 +1,25 @@
 #include <iostream>
-#include "Fridge.h"
+#include "TV.h"
 using namespace std;
 
 int main() {
-    Fridge a;
+    TV a;
     cout << a.get_powerRating() << endl;
     cout << a.get_isOn() << endl;
-    cout << a.getVolume() << endl;
+    cout << a.getScreenSize() << endl;
     cout << a.getPowerConsumption() << endl;
 
-    a.set_powerRating(10);
+    a.set_powerRating(12);
     a.turnOn();
-    a.setVolume(480);
+    a.setScreenSize(36);
     cout << a.get_powerRating() << endl;
     cout << a.get_isOn() << endl;
-    cout << a.getVolume() << endl;
+    cout << a.getScreenSize() << endl;
     cout << a.getPowerConsumption() << endl;
 
-    Fridge b(197, 711);
+    TV b(24, 71.1);
     cout << b.get_powerRating() << endl;
     cout << b.get_isOn() << endl;
-    cout << b.getVolume() << endl;
+    cout << b.getScreenSize() << endl;
     cout << b.getPowerConsumption() << endl;
 }

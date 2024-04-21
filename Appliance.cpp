@@ -1,4 +1,5 @@
 #include "Appliance.h"
+
 Appliance::Appliance() {
     this -> powerRating = 0;
     this -> isOn = false;

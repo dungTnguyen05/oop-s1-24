@@ -8,7 +8,13 @@ Airplane::Airplane(int w, int p): AirCraft(w) {
 }
 
 void Airplane::reducePassengers(int x) {
-    this -> numPassengers -= x;
+    if (x > numPassengers) {
+        this -> numPassengers = 0;
+    }
+
+    else {
+        this -> numPassengers -= x;
+    }
 }
 
 void Airplane::fly(int headwind, int minutes) {

@@ -15,7 +15,6 @@ class Helicopter: public AirCraft {
         void fly(int headwind, int minutes);
 
         string get_name();
-
         void set_name(string n);
 };
 

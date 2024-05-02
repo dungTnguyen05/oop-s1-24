@@ -5,7 +5,6 @@ using namespace std;
 
 int main() {
     Helicopter a(180, "haha");
-
     cout << a.get_fuel() << endl;
     cout << a.get_name() << endl;
 

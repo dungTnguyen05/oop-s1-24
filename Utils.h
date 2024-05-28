@@ -8,6 +8,9 @@ using namespace std;
 
 class Utils {
     public:
+        Utils() {
+        }
+
         static tuple<int, int> generateRandomPos(int gridWidth, int gridHeight) {
             int x = rand() % gridWidth;
             int y = rand() % gridHeight;
@@ -20,6 +23,9 @@ class Utils {
             int x2 = get<0>(pos2);
             int y2 = get<1>(pos2);
             return sqrt(pow(x1 - x2, 2) + pow(y1 - y2, 2));
+        }
+
+        ~Utils() {
         }
 };
 

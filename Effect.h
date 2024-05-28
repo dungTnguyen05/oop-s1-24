@@ -5,7 +5,13 @@
 
 class Effect {
     public:
+        Effect(){
+        }
+
         virtual void apply(GameEntity& entity) = 0;
+        
+        ~Effect() {
+        }
 };
 
 #endif

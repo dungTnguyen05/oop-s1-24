@@ -6,7 +6,7 @@
 using namespace std;
 
 class GameEntity {
-    private:
+    protected:
         tuple<int, int> position;
         char type;
     public:
@@ -21,6 +21,17 @@ class GameEntity {
 
         char getType() {
             return type;
+        }
+
+        void setPos(int x, int y) {
+            this -> position = make_tuple(x, y);
+        }
+
+        void setType(char type) {
+            this -> type = type;
+        }   
+
+        ~GameEntity() {
         }
 };
 

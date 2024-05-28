@@ -9,7 +9,7 @@ class Ship: public GameEntity {
         }
 
         void move(int dx, int dy) {
-            this -> position = make_tuple(get<0>(position) + dx, get<0>(position) + dy);
+            this -> position = make_tuple(get<0>(position) + dx, get<1>(position) + dy);
             this -> type = 'S';
         }
 
